@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Future Value Calculator</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+  <link rel="stylesheet" href="bootstrap.css">
+  <style>
+    body {
+      font-family: 'Lato';
+      -webkit-font-smoothing: antialiased;
+    }
+    .result-number {
+      font-weight: 300;
+      font-size: 2.5rem;
+      width: 100%;
+    }
+
+    @media (min-width: 768px) {
+      .result-number {
+        font-size: 5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container ">
+    <div class="row">
+      <div class="col-md-8 mx-auto">
+      <h1 class="py-5 text-center">Future Value Calculator</h1>  
+        <div id="results" class="text-center"></div>    
+        <form id="form">
+            <div class="form-group">
+              <label>Enter the payment:</label>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-success" id="basic-addon1">$</span>
+                </div>
+                <input type="number" class="form-control" placeholder="300" aria-label="Username" aria-describedby="basic-addon1" id="payment">
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Enter the rate:</label>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="0.50" aria-label="Recipient's username" aria-describedby="basic-addon2" id="rate">
+                <div class="input-group-append">
+                  <span class="input-group-text bg-info" id="basic-addon2">%</span>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Enter how many pay periods:</label>
+              <input class="form-control" type="number" placeholder="400" id="periods">
+            </div>
+            <div class="form-group">
+              <button class="btn btn-primary btn-block">Submit</button>
+            </div>
+          </form>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
